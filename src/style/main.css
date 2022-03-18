@@ -1,0 +1,245 @@
+@keyframes load {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+@font-face {
+	font-family: "DroidNaskh";
+	src: url(DroidNaskh-Regular.woff2) format("woff2");
+}
+@font-face {
+	font-family: "Material-Icons";
+	src: url(Material-Icons.woff2) format("woff2");
+}
+body {
+	font-family: "DroidNaskh";
+	color: #444;
+}
+input {
+	-webkit-appearance: none;
+	appearance: none;
+	box-shadow: none;
+	font-family: inherit;
+	font-size: inherit;
+	outline: 0;
+	border: 1px solid #eaeaea;
+	border-radius: 1rem;
+	padding: 1rem;
+	display: block;
+	box-sizing: border-box;
+}
+input:focus {
+	border-color: #444;
+}
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #d06;
+	color:#fff;
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+	font-size: 1.3rem;
+	border-radius: 1rem;
+	padding: .5rem 1rem;
+	display: block;
+}
+button:hover {
+	background: #f0a;
+}
+h1, h2, h3 {
+	font-weight: normal;
+}
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+a {
+	color: #d06;
+	text-decoration: none;
+}
+a:hover {
+	color: #f0a;
+}
+header {
+	display: flex;
+	border-bottom: 2px solid #eee;
+	padding:0 1rem;
+}
+header h1 {
+	width: 100%;
+}
+header .icon {
+	margin: auto;
+	font-size: 2rem;
+}
+.cat-sec {
+	padding: 0 0 1rem 0;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #eee;
+}
+.cat-item {
+	display: inline-block;
+	width: 30%;
+	margin: .3rem;
+	box-sizing: border-box;
+	background: #f9f9f9;
+	border-radius: 1rem;
+}
+.cat-item h3 {
+	margin: 0;
+	padding: .5rem .5rem .3rem;
+	font-size: 1rem;
+}
+.cat-item span, .product span {
+	padding: 0 .5rem .5rem;
+	font-size: .85rem;
+	text-align: left;
+	display: block;
+}
+.cat-item img {
+	border-radius: 1rem 1rem 0 0;
+}
+.icon {
+	font-family: "Material-Icons";
+	font-style: normal;
+	vertical-align: middle;
+}
+form {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	padding: 1rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+#checkout-form {
+	display: none;
+}
+form input {
+	width: 100%;
+	margin: 1rem 0;
+}
+form button {
+	margin: auto;
+}
+main h1 {
+	font-size: 1.8rem;
+	text-align: center;
+}
+footer {
+	text-align: center;
+	margin: 2rem 0;
+}
+.product {
+	margin-top: 2rem;
+	border-bottom: 1px solid #eee;
+}
+.product img {
+	max-width: 28rem;
+	margin: auto;
+}
+.product button {
+	vertical-align: middle;
+}
+.product h2 {
+	display: inline-block;
+}
+.product span {
+	display: inline-block;
+	background: #eee;
+	vertical-align: middle;
+	padding: .3rem;
+	margin-right: 1rem;
+	border-radius: .3rem;
+}
+.product p {
+	text-align: justify;
+}
+.cart-item {
+	display: flex;
+	padding: .5rem;
+}
+.cart-item img {
+	width: 30%;
+	max-width: 10rem;
+	border-radius: 1rem;
+	margin: auto;
+}
+.cart-item h3 {
+	width: 30%;
+	padding: 0 .5rem;
+	font-size: 1rem;
+	margin: auto;
+}
+.cart-item p {
+	width: 30%;
+	padding: 0 .5rem;
+	text-align: left;
+	font-size: .85rem;
+	margin: auto;
+}
+.cart-items button {
+	margin-bottom: 2rem;
+}
+.cart-item:nth-child(even),
+.products-item:nth-child(even),
+.purchases-item:nth-child(even) {
+	background: #f9f9f9;
+}
+.cart-items span {
+	display: block;
+	padding: 1rem 0;
+	text-align: center;
+	background: #f9f9f9;
+}
+#phone {
+	direction: ltr;
+	text-align: right;
+}
+.load {
+	animation: load .5s linear infinite;
+	-webkit-animation: load .5s linear infinite;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: block;
+	color: inherit;
+	border-top: .3rem solid;
+	border-radius: 50%;
+}
+.products-sec, .purchases-sec {
+	border-bottom: 1px solid #eee;
+	padding: 1rem 0;
+	max-width: 800px;
+	margin: auto;
+}
+.products-item, .purchases-item {
+	display: flex;
+	padding: .5rem 0;
+}
+.products-item img {
+	width: 20%;
+	max-width: 7rem;
+	border-radius: 1rem;
+	margin: auto;
+}
+.products-item p, .purchases-item p {
+	width: 25%;
+	margin: auto .5rem;
+	box-sizing: border-box;
+	font-size: .85rem;
+	word-break: break-word;
+}
+.products-item .icon, .purchases-item .icon {
+	font-size: 1.5rem;
+}
+#product-form #img {
+	direction: ltr;
+	text-align: right;
+}
